@@ -16,7 +16,11 @@
 .testimonials__pager { display: flex; justify-content: center; margin-top: var(--space-6); }
 .testimonials__dot { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; }
 .testimonials__dot::before { content: ""; width: 12px; height: 12px; border-radius: 50%; background: var(--color-espresso); opacity: 0.5; }
-.testimonials__dot[aria-current="true"]::before { opacity: 1; }
+.testimonials__dot:first-child::before { opacity: 1; }
+.testimonials:has(#t-2:target) .testimonials__dot:first-child::before,
+.testimonials:has(#t-3:target) .testimonials__dot:first-child::before { opacity: 0.5; }
+.testimonials:has(#t-2:target) .testimonials__dot[href="#t-2"]::before,
+.testimonials:has(#t-3:target) .testimonials__dot[href="#t-3"]::before { opacity: 1; }
 @media (min-width: 768px) { .testimonials__item { flex-basis: calc(50% - 12px); } }
 @media (min-width: 1024px) {
   .testimonials__list { display: grid; grid-template-columns: 417fr 441fr 417fr; column-gap: clamp(1.5rem, 4.4vw, 5.25rem); width: min(100% - 2 * var(--gutter), var(--container)); margin: 2rem auto 0; padding-inline: 0; overflow: visible; }

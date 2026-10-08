@@ -15,8 +15,7 @@
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&amp;family=Playfair+Display:wght@500;600;700&amp;family=Poppins:wght@400;500;600&amp;family=Reggae+One&amp;display=swap" rel="stylesheet"/>
   <link href="css/main.css" rel="stylesheet"/>
-  <script defer="" src="js/carousels.js"></script>
- </head>
+</head>
  <body>
   <a class="skip-link" href="#main">
    Skip to content
@@ -38,32 +37,32 @@
      <nav aria-label="Principal">
       <ul class="header__list">
        <li>
-        <a class="header__link" href="#">
+        <a class="header__link" href="#home">
          home
         </a>
        </li>
        <li>
-        <a class="header__link" href="#">
+        <a class="header__link" href="#coffee-title">
          coffee
         </a>
        </li>
        <li>
-        <a class="header__link" href="#">
+        <a class="header__link" href="#dessert-title">
          bakery
         </a>
        </li>
        <li>
-        <a class="header__link" href="#">
+        <a class="header__link" href="#coffee-title">
          shop
         </a>
        </li>
        <li>
-        <a class="header__link" href="#">
+        <a class="header__link" href="#promo-title">
          about
         </a>
        </li>
        <li>
-        <a class="header__link header__link--login" href="#">
+        <a class="header__link header__link--login" href="#newsletter-title">
          login
         </a>
        </li>
@@ -73,7 +72,7 @@
    </div>
   </header>
   <main id="main">
-   <section aria-labelledby="hero-title" class="hero">
+   <section aria-labelledby="hero-title" class="hero" id="home">
     <img alt="" class="hero__bg" decoding="async" fetchpriority="high" height="1000" src="assets/img/hero.webp" width="1920"/>
     <div class="container">
      <div class="hero__content">
@@ -139,9 +138,9 @@
      Our Special Coffee
     </h2>
     <div class="carousel">
-     <button aria-label="Previous Coffees" class="carousel__arrow carousel__arrow--prev" data-carousel-direction="previous" type="button">
+     <a aria-label="Previous Coffees" class="carousel__arrow carousel__arrow--prev" href="#coffee-1">
       <img alt="" height="71" src="assets/icons/arrow.svg" width="71"/>
-     </button>
+     </a>
      <ul class="carousel__track">
       <li class="carousel__item">
        <article class="product-card" id="coffee-1">
@@ -275,43 +274,11 @@
         </div>
        </article>
       </li>
-      <li class="carousel__item">
-       <article class="product-card" id="coffee-5">
-        <div class="product-card__media">
-         <img alt="Coffee 5" class="product-card__img" decoding="async" height="364" loading="lazy" src="assets/img/coffee-1.webp" width="334"/>
-         <div class="product-card__fav">
-          <input class="product-card__fav-input" id="fav-coffee-5" type="checkbox"/>
-          <label class="product-card__fav-label" for="fav-coffee-5">
-           <span class="visually-hidden">
-            Add Coffee 5 to favorites
-           </span>
-          </label>
-         </div>
-        </div>
-        <div class="product-card__body">
-         <div class="product-card__text">
-          <h3 class="product-card__title">
-           Ristretto
-          </h3>
-          <p class="product-card__desc">
-           A concentrated shot with a bold, intense flavor.
-          </p>
-         </div>
-         <div class="product-card__buy">
-          <data class="product-card__price" value="200">
-           Rs. 200
-          </data>
-          <button class="product-card__btn" type="button">
-           Order Now
-          </button>
-         </div>
-        </div>
-       </article>
-      </li>
+      
      </ul>
-     <button aria-label="Next Coffees" class="carousel__arrow carousel__arrow--next" data-carousel-direction="next" type="button">
+     <a aria-label="Next Coffees" class="carousel__arrow carousel__arrow--next" href="#coffee-4">
       <img alt="" height="71" src="assets/icons/arrow.svg" width="71"/>
-     </button>
+     </a>
     </div>
    </section>
    <section aria-labelledby="dessert-title" class="products">
@@ -319,9 +286,9 @@
      Our Special Dessert
     </h2>
     <div class="carousel">
-     <button aria-label="Previous Desserts" class="carousel__arrow carousel__arrow--prev" data-carousel-direction="previous" type="button">
+     <a aria-label="Previous Desserts" class="carousel__arrow carousel__arrow--prev" href="#dessert-1">
       <img alt="" height="71" src="assets/icons/arrow.svg" width="71"/>
-     </button>
+     </a>
      <ul class="carousel__track">
       <li class="carousel__item">
        <article class="product-card" id="dessert-1">
@@ -455,43 +422,11 @@
         </div>
        </article>
       </li>
-      <li class="carousel__item">
-       <article class="product-card" id="dessert-5">
-        <div class="product-card__media">
-         <img alt="Dessert 5" class="product-card__img" decoding="async" height="364" loading="lazy" src="assets/img/dessert-1.webp" width="334"/>
-         <div class="product-card__fav">
-          <input class="product-card__fav-input" id="fav-dessert-5" type="checkbox"/>
-          <label class="product-card__fav-label" for="fav-dessert-5">
-           <span class="visually-hidden">
-            Add Dessert 5 to favorites
-           </span>
-          </label>
-         </div>
-        </div>
-        <div class="product-card__body">
-         <div class="product-card__text">
-          <h3 class="product-card__title">
-           Croissant
-          </h3>
-          <p class="product-card__desc">
-           A buttery, flaky pastry with a hint of vanilla.
-          </p>
-         </div>
-         <div class="product-card__buy">
-          <data class="product-card__price" value="200">
-           Rs. 200
-          </data>
-          <button class="product-card__btn" type="button">
-           Order Now
-          </button>
-         </div>
-        </div>
-       </article>
-      </li>
+      
      </ul>
-     <button aria-label="Next Desserts" class="carousel__arrow carousel__arrow--next" data-carousel-direction="next" type="button">
+     <a aria-label="Next Desserts" class="carousel__arrow carousel__arrow--next" href="#dessert-4">
       <img alt="" height="71" src="assets/icons/arrow.svg" width="71"/>
-     </button>
+     </a>
     </div>
    </section>
    <section aria-labelledby="promo-title" class="promo">
@@ -501,7 +436,7 @@
      <h2 class="promo__title" id="promo-title">
       Check Out Our Best Coffee Beans
      </h2>
-     <a class="promo__btn" href="#">
+     <a class="promo__btn" href="#coffee-title">
       Explore Our Products
       <span aria-hidden="true" class="promo__chevrons">
        <img alt="" height="20" src="assets/icons/chevron.svg" width="20"/>
@@ -603,12 +538,9 @@
      </li>
     </ul>
     <nav aria-label="Testimonials" class="testimonials__pager">
-     <button aria-current="true" aria-label="Testimonial 1" class="testimonials__dot" data-testimonial-index="0" type="button">
-     </button>
-     <button aria-current="false" aria-label="Testimonial 2" class="testimonials__dot" data-testimonial-index="1" type="button">
-     </button>
-     <button aria-current="false" aria-label="Testimonial 3" class="testimonials__dot" data-testimonial-index="2" type="button">
-     </button>
+     <a aria-label="Testimonial 1" class="testimonials__dot" href="#t-1"></a>
+     <a aria-label="Testimonial 2" class="testimonials__dot" href="#t-2"></a>
+     <a aria-label="Testimonial 3" class="testimonials__dot" href="#t-3"></a>
     </nav>
    </section>
    <section aria-labelledby="newsletter-title" class="newsletter">
