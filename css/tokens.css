@@ -11,8 +11,10 @@
   --color-text-soft: rgba(48, 38, 28, 0.7);
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-star: #ffb921; /* extraído del SVG 0:200; el rating usa assets/icons/star.svg */
-  --color-overlay: rgba(48, 38, 28, 0.55); /* contraste AA del texto sobre el hero */
+  --color-star: #ffb921;
+  /* extraído del SVG 0:200; el rating usa assets/icons/star.svg */
+  --color-overlay: rgba(48, 38, 28, 0.55);
+  /* contraste AA del texto sobre el hero */
   --color-error: #b3261e;
 
   /* Tipografía */
